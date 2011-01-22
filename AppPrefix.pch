@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'Creative Curses' target in the 'Creative Curses' project
+//
+
+#define DEBUG_MODE
+
+#ifdef DEBUG_MODE
+#define Log( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define Log( s, ... ) 
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
