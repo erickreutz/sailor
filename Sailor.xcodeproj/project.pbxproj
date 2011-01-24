@@ -18,6 +18,7 @@
 		07D8168D12DF6FAB00839BBB /* SAWordsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8168C12DF6FAB00839BBB /* SAWordsView.m */; };
 		07D8169112DF6FBE00839BBB /* SAWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8169012DF6FBE00839BBB /* SAWordView.m */; };
 		07D8178B12DF7C5E00839BBB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D8178A12DF7C5E00839BBB /* QuartzCore.framework */; };
+		07F06AAA12EDF6FA007E81C1 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F06AA912EDF6FA007E81C1 /* Icon-72.png */; };
 		1D3623260D0F684500981E51 /* SAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SAAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -43,10 +44,11 @@
 		07D8168F12DF6FBE00839BBB /* SAWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAWordView.h; sourceTree = "<group>"; };
 		07D8169012DF6FBE00839BBB /* SAWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAWordView.m; sourceTree = "<group>"; };
 		07D8178A12DF7C5E00839BBB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		07F06AA212EDF543007E81C1 /* Sailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F06AA912EDF6FA007E81C1 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* SAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* SAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Sailor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sailor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,7 +132,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Sailor.app */,
+				07F06AA212EDF543007E81C1 /* Sailor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +162,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07F06AA912EDF6FA007E81C1 /* Icon-72.png */,
 				076C2E4812EA477D00E2ED87 /* Entitlements.plist */,
 				076C2E0F12EA3F3B00E2ED87 /* Icon.png */,
 				076C2E1012EA3F3B00E2ED87 /* Icon@2x.png */,
@@ -199,7 +202,7 @@
 			);
 			name = Sailor;
 			productName = "Creative Curses";
-			productReference = 1D6058910D05DD3D006BFB54 /* Sailor.app */;
+			productReference = 07F06AA212EDF543007E81C1 /* Sailor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -236,6 +239,7 @@
 				0710E78E12E8E49600FF582E /* SecondWords.plist in Resources */,
 				076C2E1112EA3F3B00E2ED87 /* Icon.png in Resources */,
 				076C2E1212EA3F3B00E2ED87 /* Icon@2x.png in Resources */,
+				07F06AAA12EDF6FA007E81C1 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,13 +267,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Kreutzer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Kreutzer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "EAD8CFFD-EA0B-4181-B478-82EF87E03F34";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EAD8CFFD-EA0B-4181-B478-82EF87E03F34";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Distribution;
 		};
@@ -278,13 +288,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Super Top Secret";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Kreutzer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AppPrefix.pch;
 				INFOPLIST_FILE = AppInfo.plist;
 				PRODUCT_NAME = Sailor;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CF07FFE5-7FC6-4CB7-B7AE-1AF9844A4D86";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EAD8CFFD-EA0B-4181-B478-82EF87E03F34";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -301,6 +312,7 @@
 				GCC_PREFIX_HEADER = AppPrefix.pch;
 				INFOPLIST_FILE = AppInfo.plist;
 				PRODUCT_NAME = Sailor;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CF07FFE5-7FC6-4CB7-B7AE-1AF9844A4D86";
 			};
 			name = Debug;
 		};
@@ -322,14 +334,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Eric Kreutzer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = AppInfo.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EAD8CFFD-EA0B-4181-B478-82EF87E03F34";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
