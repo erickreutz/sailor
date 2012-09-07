@@ -312,7 +312,6 @@
 				GCC_PREFIX_HEADER = AppPrefix.pch;
 				INFOPLIST_FILE = AppInfo.plist;
 				PRODUCT_NAME = Sailor;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CF07FFE5-7FC6-4CB7-B7AE-1AF9844A4D86";
 			};
 			name = Debug;
 		};
