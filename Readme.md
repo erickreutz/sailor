@@ -2,7 +2,7 @@
 
 Sailor is a app that generates creative curse words. 
 
-**You can download Sailor [free on the App Store](http://itunes.apple.com).**
+**You can download Sailor [free on the App Store](http://itunes.apple.com/us/app/sailor/id416574379).**
 
 Email me at <eric@airkrft.com> with any questions. 
 
